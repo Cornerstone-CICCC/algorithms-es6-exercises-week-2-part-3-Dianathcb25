@@ -4,7 +4,8 @@
 // Test your function with different numbers of arguments.
 
 function subtract(...numbers) {
-  // Your code here
+  const diff = numbers.reduce((acc, curr) => acc - curr, numbers[0])
 }
-
-console.log(subtract(10, 2, 3)); // Example usage
+console.log(subtract(10, 3, 2)); // Example usage
+console.log(subtract(65, 89, 12))
+console.log(subtract(6, 1, 78))
